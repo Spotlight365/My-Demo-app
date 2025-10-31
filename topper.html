@@ -1,0 +1,22 @@
+# hello_github.py
+# A simple Python script that displays a greeting with system info
+
+import platform
+from datetime import datetime
+
+def display_greeting():
+    print("=" * 50)
+    print("👋 Welcome to My GitHub Python Script!")
+    print("=" * 50)
+    print(f"Python version : {platform.python_version()}")
+    print(f"Operating system: {platform.system()} {platform.release()}")
+    print(f"Machine name    : {platform.node()}")
+    print(f"Run time        : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("-" * 50)
+    print("This script was created to test GitHub version control.")
+    print("Modify and push your changes to practice commits 🚀")
+    print("=" * 50)
+
+if __name__ == "__main__":
+    display_greeting()
+ 
